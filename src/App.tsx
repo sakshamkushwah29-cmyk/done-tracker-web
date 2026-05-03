@@ -1,5 +1,6 @@
 import { MessageSquare, Smile, TrendingUp, CheckCircle, Quote } from 'lucide-react';
 import * as motion from "motion/react-client";
+import { Analytics } from '@vercel/analytics/react';
 
 import { ValidationMarquee } from './components/ValidationMarquee';
 import { PricingSection } from './components/PricingSection';
@@ -328,6 +329,7 @@ function App() {
           </div>
         </div>
       </footer>
+      <Analytics />
     </div>
   );
 }
